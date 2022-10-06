@@ -1,6 +1,6 @@
 package part18;
 
-public class ExceptionMessage {
+public class ExceptionMessage2 {
     public static void md1(int n){
         md2(n,0);
     }
@@ -8,7 +8,11 @@ public class ExceptionMessage {
         int r = n1/n2;
     }
     public static void main(String[]args){
-        md1(3);
-        System.out.println("Good bye~~~!");
+        try {
+            md1(3);
+        }catch (Throwable e){
+            e.printStackTrace();
+        }
+                System.out.println("Good bye~~~!");
     }
 }

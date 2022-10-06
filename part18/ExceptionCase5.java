@@ -3,7 +3,7 @@ package part18;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExceptionCase4 {
+public class ExceptionCase5 {
     public static void main(String[]args){
         Scanner kb = new Scanner(System.in);
 
@@ -14,6 +14,8 @@ public class ExceptionCase4 {
             int n2 = kb.nextInt();
             System.out.printf("%d / %d = %d",n1,n2,n1/n2);
 
+        }catch (ArithmeticException e){
+            e.getMessage();
         }catch (InputMismatchException e){
             e.getMessage();
         }
