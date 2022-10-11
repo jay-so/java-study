@@ -2,9 +2,9 @@ package part4;
 
 public class BitOperator {
     public static void main(String[]args){
-        byte n1 = 5;
-        byte n2 = 3;
-        byte n3 = -1;
+        byte n1 = 5; //비트로 00000101
+        byte n2 = 3; //비트로 00000011
+        byte n3 = -1; //비트로 11111111
 
         byte r1 = (byte) (n1 & n2);
         byte r2 = (byte) (n1|n2);
