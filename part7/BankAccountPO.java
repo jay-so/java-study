@@ -7,7 +7,7 @@ package part7;
  */
 
 public class BankAccountPO {
-   static int balance = 0; //예금 잔액
+    static int balance = 0; //예금 잔액
 
     public static void main(String[]args){
         deposit(10000); //입금 진행
@@ -18,8 +18,8 @@ public class BankAccountPO {
 
     //입금을 담당하는 메소드
     public static int deposit(int amount){
-            balance +=amount;
-            return balance;
+        balance += amount;
+        return balance;
     }
 
     //출금을 담당하는 메소드

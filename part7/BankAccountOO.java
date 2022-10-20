@@ -64,7 +64,7 @@ public class BankAccountOO {
 
         //각 인스턴스를 대상으로 출금을 진행
         yoon.withdraw(2000);
-        yoon.withdraw(2000);
+        park.withdraw(2000);
 
         //각 인스턴스를 대상으로 잔액을 조회
         yoon.checkMyBalance();
