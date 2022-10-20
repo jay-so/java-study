@@ -3,6 +3,7 @@ package part10;
 class SC{
     static final double PI = 3.1415;
 
+    //모두 클래스  메소드 사용
     static double add(double n1, double n2){
         return n1 + n2;
     }
