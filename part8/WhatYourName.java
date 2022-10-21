@@ -1,7 +1,17 @@
 package part8;
 
-import part8.Myclass.AAA;
-import part8.Myclass.ZZZ;
+
+class AAA{
+    public void showName(){
+        System.out.println("My name is AAA");
+    }
+}
+
+class ZZZ{
+    public void showName(){
+        System.out.println("My name is ZZZ");
+    }
+}
 
 public class WhatYourName {
     public static void main(String[]args){
