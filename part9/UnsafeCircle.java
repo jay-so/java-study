@@ -1,42 +1,37 @@
 package part9;
 
 class Circle{
-    double rad = 0;
+    double rad = 0; //원의 반지름
     final double PI = 3.14;
 
     public Circle(double r) {
-        setRad(r);
+        setRad(r); //아래에 정의된 setRad 메소드 호출을 통한 초기화
     }
+
     public void setRad(double r){
-        if(r<0){
+        if(r<0){ //반지름은 0보다 작을 수 없으므로
             rad = 0;
-            return;
+            return; //메소드를 빠져나감
         }
         rad = r;
     }
 
-    public double getRad(){
-        return rad;
-    }
     public double getArea(){
-        return (rad*rad)*PI;
+        return (rad * rad) *PI; //원의 넓이를 반환함
     }
 }
 
 public class UnsafeCircle {
     public static void main(String[]args){
+      // 객체 생성
         Circle c = new Circle(1.5);
         System.out.println(c.getArea());
 
         c.setRad(2.5);
         System.out.println(c.getArea());
-
         c.setRad(-3.3);
         System.out.println(c.getArea());
-        /*
-        올바르지 않은 접근 부분
-         */
-        c.rad = -4.5;
+        c.rad = -4.5; //옳지 않은 접근 방법, 그리고 문제가 되는 부분
         System.out.println(c.getArea());
     }
 }

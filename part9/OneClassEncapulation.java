@@ -10,10 +10,16 @@ class SinusCap{
     void  snuTake(){
         System.out.println("코가 뻥 뚫립니다.");
     }
+
+    void take(){ //약의 복용 방법 및 순서가 담긴 메소드
+        sniTake();
+        sneTake();
+        snuTake();
+    }
 }
 
 class ColdPatinet2{
-    void takeSinus(SinivelCap cap){
+    void takeSinus(SinusCap cap){
         cap.take();
     }
 }
@@ -21,6 +27,6 @@ class ColdPatinet2{
 public class OneClassEncapulation {
     public static void main(String[]args){
         ColdPatinet2 suf = new ColdPatinet2();
-        suf.takeSinus(new SinivelCap());
+        suf.takeSinus(new SinusCap());
     }
 }

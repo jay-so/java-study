@@ -1,18 +1,18 @@
 package part9;
 
-class SinivelCap{
+class SinivelCap{ //콧물 처치용 캡슐
     void take(){
         System.out.println("콧물이 싹~ 납니다.");
     }
 }
 
-class SneezeCap{
+class SneezeCap{  //재채기 처치용 캡슐
     void take(){
         System.out.println("재채기가 맺습니다.");
     }
 }
 
-class SnuffleCap{
+class SnuffleCap{ //코막힘 처치용 캡슐
     void take(){
         System.out.println("커기 빵 뚫립니다.");
     }
@@ -35,7 +35,7 @@ public class BadEnxapsulatin {
     public static void main(String[]args){
         ColdPatinet suf = new ColdPatinet();
 
-        //콧물 캡슐 구매 후 복용R
+        //콧물 캡슐 구매 후 복용
         suf.takeSinivelCap(new SinivelCap());
 
         //재채기 캡슐 구매 후 복용
