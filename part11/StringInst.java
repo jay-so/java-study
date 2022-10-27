@@ -12,7 +12,7 @@ public class StringInst {
         String str2 = "The Best String";
 
         System.out.println(str1);
-        System.out.println(str1.length());
+        System.out.println(str1.length()); // length의 반환 값을 인자로 전달
         System.out.println();
 
         System.out.println(str2);

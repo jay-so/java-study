@@ -1,12 +1,14 @@
 package part11;
-
+/*
+ 생성자의 오버로딩
+ */
 class Person{
     private  int regiNum;
     private  int passNum;
 
     Person(int rnum, int pnum){
-        regiNum = rnum;
-        passNum = pnum;
+        regiNum = rnum; //주민등록 번호
+        passNum = pnum; //여권 번호
     }
 
      Person(int rnum){
