@@ -26,8 +26,11 @@ class Circle{
 public class CircleConstPI {
 
     public static void main(String[]args){
-        Circle c = new Circle(1.2);
-        c.showPerimeter();
-        c.showArea();
+        Circle c1 = new Circle(1.2);
+        Circle c2 = new Circle(1.5);
+        c1.showPerimeter();
+        c1.showArea();
+        c2.showPerimeter();
+        c2.showArea();
     }
 }
