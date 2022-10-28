@@ -9,7 +9,7 @@ public class FormatString {
         System.out.printf("name: %s \n" ,name);
         System.out.printf("age: %d \n height : %e \n\n" ,age,height);
         System.out.printf("%d - %o - %x \n\n" ,77,77,77);
-        System.out.printf("%g \n" ,0,0014);
-        System.out.printf("%g \n" ,0,000014);
+        System.out.printf("%g \n" ,0.0014);
+        System.out.printf("%g \n" ,0.000014);
     }
 }
