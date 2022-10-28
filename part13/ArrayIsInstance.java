@@ -14,7 +14,7 @@ public class ArrayIsInstance {
 
         //배열의 인스턴스 변수 접근
         System.out.println("배열 ar1 길이:" + ar1.length);
-        System.out.println("배열 ar1 길이:" + ar2.length);
-        System.out.println("배열 ar1 길이:" + ar3.length);
+        System.out.println("배열 ar2 길이:" + ar2.length);
+        System.out.println("배열 ar3 길이:" + ar3.length);
     }
 }
