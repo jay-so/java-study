@@ -25,6 +25,7 @@ public class EnhancedForInst {
         ar[3] = new Box2(404,"Dress");
         ar[4] = new Box2(505,"Fairy-tale book");
 
+        // 배열에서 번호가 5Ø5인 Box를 찾아 그 내용물을 출력하는 반복문
         for(Box2 e: ar){
             if(e.getBoxNum() == 505)
                 System.out.println(e);
