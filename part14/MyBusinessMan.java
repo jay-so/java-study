@@ -12,7 +12,10 @@ class BusinessMan extends Man{
     String position;
 
     public BusinessMan(String name,String company, String position) {
+        //상위 클래스 man의 멤버 초기화
         this.name = name;
+
+        //클래스 BusinessMan의 멤버 초기화
         this.company = company;
         this.position = position;
     }

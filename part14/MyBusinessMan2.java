@@ -16,7 +16,7 @@ class BusinessMan2 extends Man2{
     String position;
 
     public BusinessMan2(String name, String company, String position) {
-        super(name);
+        super(name); //상위 클래스이 생성자 호출
         this.company = company;
         this.position = position;
     }
