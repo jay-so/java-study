@@ -32,9 +32,9 @@ public class Wrapping {
 
     public static void wrapBox(Box box){
         if(box instanceof GoldPaperBox){
-            ((GoldPaperBox)box).goldWrap();
+            ((GoldPaperBox)box).goldWrap(); // 형 변환 후 메소드 호출
         } else if (box instanceof PaperBox) {
-            ((PaperBox)box).paperWrap();
+            ((PaperBox)box).paperWrap(); // 형 변환 후 메소드 호출
         }else {
             box.simplewrap();
         }

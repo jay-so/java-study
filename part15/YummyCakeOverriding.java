@@ -8,8 +8,7 @@ class Cake{
 
 class CheeseCake extends Cake{
     @Override
-    public void yummy() {
-        super.yummy();
+    public void yummy() { // Cake의 yummy 메소드를 오벼라이딩 함
         System.out.println("Yummy Cheese Cake");
     }
 
@@ -21,8 +20,8 @@ class CheeseCake extends Cake{
 
 public class YummyCakeOverriding {
     public static void main(String[]args){
-        Cake c1 = new CheeseCake();
-        CheeseCake c2 = new CheeseCake();
+        Cake c1 = new CheeseCake(); // 오버라이딩 한 CheeseCake의 yummy 메소드 호출됨
+        CheeseCake c2 = new CheeseCake(); // 오버라이딩 한 CheeseCake의 yummy 메소드 호출됨
 
         c1.yummy();
         c2.yummy();

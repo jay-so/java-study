@@ -1,6 +1,6 @@
 package part15;
 class MobilePhone{
-    protected String number;
+    protected String number; //전화번호
 
     public MobilePhone(String num) {
         this.number = num;
@@ -11,7 +11,7 @@ class MobilePhone{
 }
 
 class SmartPhone extends MobilePhone{
-    private String androidVer;
+    private String androidVer; //안드로이드 운영체제 버전
 
     public SmartPhone(String num, String androidVer) {
         super(num);
