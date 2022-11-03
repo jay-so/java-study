@@ -6,6 +6,7 @@ class Cake3 {
 }
 
 class CheeseCake3 extends Cake3 {
+
     public void yummy() {
         super.yummy(); //Cake3의 yummy 메소드 호출
         System.out.println("Yummy CheeseCake");
@@ -22,5 +23,6 @@ public class YummyCakeSuper {
         CheeseCake3 cake = new CheeseCake3();
         cake.yummy();
         cake.tasty();
+
     }
 }
