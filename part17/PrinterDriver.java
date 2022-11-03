@@ -1,5 +1,6 @@
 package part17;
 
+//S사가 정의한 클래스
 class SPrinterDriver implements Printable{
     @Override
     public void print(String doc){
@@ -8,6 +9,7 @@ class SPrinterDriver implements Printable{
     }
 }
 
+//L사가 정의한 클래스
 class LPrinterDriver implements Printable{
     @Override
     public void print(String doc){
@@ -18,7 +20,7 @@ class LPrinterDriver implements Printable{
 
 public class PrinterDriver {
     public static void main(String[]args){
-        String myDoc = " This is a report about ... ";
+        String myDoc = "This is a report about ... ";
 
         //삼성 프린터로 출력
         Printable prn = new SPrinterDriver();

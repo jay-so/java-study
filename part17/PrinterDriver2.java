@@ -1,5 +1,6 @@
 package part17;
 
+// S사의 흑백 프린터 드라이버
 class Prn204Drv implements Printable{
     @Override
     public void print(String doc) {
@@ -8,6 +9,7 @@ class Prn204Drv implements Printable{
     }
 }
 
+// L사의 흑백 프린터 드리이버
 class Prn731Drv implements Printable{
     @Override
     public void print(String doc) {
