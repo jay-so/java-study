@@ -4,6 +4,7 @@ interface Printable3{
     void printLine(String str);
 }
 
+// Printable을 직접 구현함
 class SimplePrinter2 implements Printable3{
     @Override
     public void printLine(String str) {
@@ -11,6 +12,7 @@ class SimplePrinter2 implements Printable3{
     }
 }
 
+//Printable을 간접 구현함
 class MultiPrinter extends SimplePrinter2{
     public void printLine(String str){
         super.printLine("stat of multil...");

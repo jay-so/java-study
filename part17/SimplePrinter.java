@@ -5,9 +5,12 @@ interface Printable2 {
         System.out.println(str);
     }
     default void print(String doc){
+        // 인터페이스의 static 메소드 호출
         printLine(doc);
     }
 }
+
+ // 인터페이스 Printable2에는 구현해야 할 메소드가 존재하지 않는다.
 class Printer2 implements Printable2{}
 
 
@@ -17,6 +20,7 @@ public class SimplePrinter {
         Printable prn = new Printer();
         prn.print(myDoc);
 
+        // 인터페이스의 static 메소드 직접 호출
         Printable2.printLine("end of line");
     }
 }
