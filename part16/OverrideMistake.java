@@ -16,7 +16,7 @@ class ChildAdder extends ParentAdder{
 
 public class OverrideMistake {
     public static void main(String[]args){
-        ParentAdder adder = new ChildAdder();
+        ChildAdder adder = new ChildAdder();
         System.out.println(adder.add(3,4));
     }
 }
