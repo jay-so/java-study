@@ -5,7 +5,7 @@ public class ArrayIndexOutOfBounds {
     int[] arr = {1,2,3};
 
     for(int i = 0; i<4 ;i++) {
-        System.out.println(arr[i]);
+        System.out.println(arr[i]); // 인텍스 값 3은 예외를 발생시킴
     }
     }
 }
