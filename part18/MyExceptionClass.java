@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 class ReadAgeException extends Exception{
     public ReadAgeException(){
-        super("유하지 않은 나이가 입력되었습니다.");
+        super("유효하지 않은 나이가 입력되었습니다.");
     }
 }
 
-public class MyExceptionCase {
+public class MyExceptionClass {
     public static void main(String[]args){
-        System.out.println("나이 입력:");
+        System.out.print("나이 입력:");
 
         try{
             int age = readAge();
@@ -25,7 +25,7 @@ public class MyExceptionCase {
         int age = kb.nextInt();
 
         if(age<0)
-            throw  new ReadAgeException();
+            throw  new ReadAgeException(); //예외의 발생
         return age;
     }
 }
