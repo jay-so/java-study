@@ -1,15 +1,15 @@
 package part19;
 
 class Rectangle implements Cloneable{
-    private Point upperLeft;
-    private Point lowerRight;
+    private Point upperLeft; // 좌측 상단 좌표
+    private Point lowerRight;// 우측 하단 좌표
 
     public Rectangle(int x1, int y1, int x2, int y2){
         upperLeft = new Point(x1,y1);
         lowerRight = new Point(x2,y2);
     }
 
-    public void changesPos(int x1, int  y1, int x2, int y2){
+    public void changesPos(int x1, int  y1, int x2, int y2){ // 좌표 정보 수정
         upperLeft.changePos(x1,y1);
         lowerRight.changePos(x1,y2);
     }
@@ -35,8 +35,8 @@ public class shallowCopy {
         Rectangle cpy;
 
         try{
-            cpy = (Rectangle) org.clone();
-            org.changesPos(2,2,7,7);
+            cpy = (Rectangle) org.clone(); //인스턴스 복사
+            org.changesPos(2,2,7,7); //인스턴스 좌표 정보 수정
             org.showPosition();
             cpy.showPosition();
         }catch (CloneNotSupportedException e){
