@@ -1,2 +1,4 @@
-package part28;public class OptionalIntBase {
+package part28;
+
+public class OptionalIntBase {
 }
