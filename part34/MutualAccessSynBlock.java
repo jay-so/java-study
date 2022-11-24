@@ -1,2 +1,4 @@
-package part34;public class MutualAccessSynBlock {
+package part34;
+
+public class MutualAccessSynBlock {
 }
