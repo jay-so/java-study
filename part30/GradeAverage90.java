@@ -1,2 +1,4 @@
-package part30;public class GradeAverage90 {
+package part30;
+
+public class GradeAverage90 {
 }
