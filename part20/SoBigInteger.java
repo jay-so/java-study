@@ -10,8 +10,8 @@ public class SoBigInteger {
         System.out.println();
 
         //매우 큰 수를 BigInteger 인스턴스로 표현
-        BigInteger big1 = new BigInteger("1000000000000");
-        BigInteger big2 = new BigInteger("--99999999999");
+        BigInteger big1 = new BigInteger("10000000");
+        BigInteger big2 = new BigInteger("-999999999");
 
         //BigInteger 기반 덧셈 연산
         BigInteger r1 = big1.add(big2);
