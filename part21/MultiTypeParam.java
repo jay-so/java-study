@@ -1,8 +1,8 @@
 package part21;
 
 class DBox<L,R>{
-    private L left;
-    private R right;
+    private L left; //왼쪽 수납 공간
+    private R right;  //오른쪽 수납 공간
 
     public void set (L left, R right) {
         this.left = left;
