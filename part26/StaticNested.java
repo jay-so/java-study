@@ -2,11 +2,12 @@ package part26;
 
 class Outer{
     private static int num = 0;
-    static class Nested1{ //Staic 네스티드 클래스
+    static class Nested1 { //Static 네스티드 클래스
         void add(int n){
             num += n;
         }
     }
+
     static class Nested2{ //Static 네스티드 클래스
         int get(){
             return num;
