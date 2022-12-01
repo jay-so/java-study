@@ -8,12 +8,12 @@ import java.util.List;
 
 class SLemComp implements Comparator<String>{
     @Override
-    public int compare(String s1,String s2){
+    public int compare(String s1, String s2){
         return s1.length() - s2.length();
     }
 }
 
-public class SLenComparaotr {
+class SLenComparaotr{
     public static void main(String[]args){
         List<String> list = new ArrayList<>();
         list.add("Robot");
@@ -22,8 +22,7 @@ public class SLenComparaotr {
 
         Collections.sort(list,new SLemComp()); //정렬
 
-        for(String s: list){
+        for(String s: list)
             System.out.println(s);
-        }
     }
 }
