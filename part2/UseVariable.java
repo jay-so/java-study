@@ -1,15 +1,12 @@
 package part2;
 
-/*
-    변수의선언 및 사용
- */
-public class UseVariable {
-    public static void main(String[] args){
-        int num1; //변수 num1을 선언
-        num1 = 10; //변수 num1에 10을 저장
+class UseVariable{
+    public static void main(String[]args){
+        int number; //변수 number를 선언
+        number = 10; //변수 number에 10이라는 값을 할당함
 
-        int num2 = 20;//변수 num2 선언과 동시에 20으로 초기화
-        int num3 = num1 + num2; //num1 + num2의 값을 변수 num3에 넣음
-        System.out.println(num1 + " + " + num2 + " = " + num3); //출력: 10 + 20 = 30
+        int number2 = 20; //변수 number2를 선언과 함께 20이라는 값을 대입함(변수의 선언과 동시에 변수의 값 할당 = 변수의 초기화)
+        int result = number + number2; //변수 number와 number2를 더해서 result라는 변수에 값을 대입함
+        System.out.println(result);
     }
 }

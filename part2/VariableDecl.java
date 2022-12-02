@@ -1,8 +1,5 @@
 package part2;
 
-/*
- 실수형 자료형 사용: float, double
- */
 public class VariableDecl {
     public static void main(String[] args){
         double num1, num2;// 두개의 변수 num1과 num2를 동시에 선언
