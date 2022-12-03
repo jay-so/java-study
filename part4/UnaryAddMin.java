@@ -1,9 +1,5 @@
 package part4;
 
-/*
- 단항 연산자 = 피연산자가 하나인 연산자
- 부호 연산자 : +(양수)는 보통 생략한다., -(음수)
- */
 
 public class UnaryAddMin {
     public static void main(String[] args){

@@ -1,11 +1,6 @@
 package part4;
 
-/*
- 논리 연산자 : &&, ||, !
- && : 모두 다 참일때 true(논리 연산자 and)
- || : 한 쪽이라도 참일때 true(논리 연산자 or)
- ! : 참일때 false, 거짓일 때 true
- */
+
 
 public class LogicalOp {
     public static void main(String[] args){

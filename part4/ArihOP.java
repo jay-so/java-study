@@ -1,17 +1,6 @@
 package part4;
 
 
-/*
-    대입연산자와 산술 연산자: = , +, -, *,/,%
-    - 피 연산자들의 자료형이 같아야 연산이 가능함
-    대입 연산자 : =
-    덧셈 연산자 : +
-    뺄셈 연산자 : -
-    곱셈 연산자 : *
-    나누기 연산자(몫) : /
-    나머지 연산자(나머지) : %
-
- */
 public class ArihOP {
     public static void main(String[] args){
        int num1 = 7;
