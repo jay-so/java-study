@@ -1,29 +1,27 @@
 package part19;
-class Point implements Cloneable{
+class  Point implements Cloneable{
     private int xPos;
     private int yPos;
+
+    //생성자
 
     public Point(int xPos, int yPos) {
         this.xPos = xPos;
         this.yPos = yPos;
     }
+
     public void showPosition(){
         System.out.printf("[%d, %d]",xPos,yPos);
         System.out.println();
     }
 
-    public void changePos(int x, int y){
-        xPos = x;
-        yPos = y;
-    }
     @Override
     public Object clone() throws CloneNotSupportedException{
         return super.clone();
     }
 }
 
-
-public class InstanceCloning {
+class InstanceCloning{
     public static void main(String[]args){
         Point org = new Point(3,5);
         Point cpy;
@@ -32,9 +30,8 @@ public class InstanceCloning {
             cpy = (Point) org.clone();
             org.showPosition();
             cpy.showPosition();
-        } catch (CloneNotSupportedException e) {
+        }catch (CloneNotSupportedException e){
             e.printStackTrace();
         }
     }
-
 }
