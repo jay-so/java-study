@@ -1,6 +1,5 @@
 package part20;
-
-public class AutoBosingUnboxing {
+class AutoBosingUnboxing{
     public static void main(String[]args){
         Integer iObj = 10; //오토 박싱 진행
         Double dObj = 3.14; //오토 박싱 진행
@@ -12,5 +11,6 @@ public class AutoBosingUnboxing {
         double num2 = dObj; //오토 언박싱 진행
         System.out.println(num1);
         System.out.println(num2);
+        System.out.println();
     }
 }

@@ -1,6 +1,5 @@
 package part20;
-
-public class BoxingUnboxing {
+class BoxingUnboxing{
     public static void main(String[]args){
         Integer iObj = new Integer(10); //박싱
         Double dObj = new Double(3.14); //박싱
