@@ -1,18 +1,17 @@
 package part21;
-
-class Apple4 {
+class Apple4{
     public String toString(){
-        return "I am an apple.";
+        return "I am an Apple.";
     }
 }
 
 class Orange4{
     public String toString(){
-        return "I am an orange.";
+        return "I am an Orange.";
     }
 }
 
-class Box7{
+class Box4{
     private Object ob;
 
     public Object get() {
@@ -24,17 +23,18 @@ class Box7{
     }
 }
 
-
 public class FruitAndBoxFault2 {
     public static void main(String[]args){
-        Box7 aBox = new Box7();
-        Box7 oBox = new Box7();
+        Box4 abox = new Box4();
+        Box4 obox = new Box4();
 
-        //다음 두 문장은 프로그래머의 실수이다.
-        aBox.set("Apple");
-        oBox.set("Orange");
+        //다음의 두 문장은 프로그래머의 실수 입니다.
+        abox.set("Apple");
+        obox.set("Orange");
 
-        System.out.println(aBox.get());
-        System.out.println(oBox.get());
+        //문자열을 출력합니다.
+        System.out.println(abox.get());
+        System.out.println(obox.get());
     }
 }
+

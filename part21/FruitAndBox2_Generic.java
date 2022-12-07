@@ -1,28 +1,41 @@
 package part21;
 
-class Box<T>{
-    private T ob;
-
-    public void set(T o){
-        ob = o;
+class Apple5{
+    public String toString(){
+        return "I am an Apple.";
     }
-    public T get(){
-        return ob;
+}
+class Orange5{
+    public String toString(){
+        return "I am an Orange.";
     }
 }
 
-public class FruitAndBox2_Generic {
+class Box5<T>{
+    private T ob;
+
+    public T get() {
+        return ob;
+    }
+
+    public void set(T ob) {
+        this.ob = ob;
+    }
+}
+
+class FruitAndBox2_Generic {
     public static void main(String[]args){
-        Box<Apple> aBox = new Box<Apple>();
-        Box<Orange> oBox = new Box<Orange>();
+        Box5<Apple5> aBox = new Box5<>(); //T를 Apple로 결정
+        Box5<Orange5> oBox = new Box5<>(); //T를 Orange로 결정
 
-        aBox.set(new Apple());
-        oBox.set(new Orange());
+        aBox.set(new Apple5()); //사과를 상자에 담는다.
+        oBox.set(new Orange5()); //오렌지를 상자에 담는다.
 
-        Apple ap = aBox.get();
-        Orange og = oBox.get();
+        Apple5 ap = aBox.get(); //사과를 꺼내는데 형 변환을 하지 않는다.
+        Orange5 og = oBox.get(); //오렌지를 꺼내는데 형 변환을 하지 않는다.
 
         System.out.println(ap);
         System.out.println(og);
     }
+
 }

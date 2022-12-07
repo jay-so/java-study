@@ -1,6 +1,5 @@
 package part21;
-
-class Box9<T>{
+class Box12<T>{
     private T ob;
 
     public T get() {
@@ -11,16 +10,14 @@ class Box9<T>{
         this.ob = ob;
     }
 }
-
 class Unboxer{
-    public static <T> T openBox(Box8<T> box){
+    public static <T> T openBox(Box12<T> box){
         return box.get();
     }
 }
-
-public class GenericMethodBoxMarker2 {
+class GenericMethodBoxMaker2{
     public static void main(String[]args){
-        Box8<String> box = new Box8<>();
+        Box12<String> box = new Box12<>();
         box.set("My Generic Method");
 
         String str = Unboxer.<String>openBox(box);

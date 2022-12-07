@@ -1,21 +1,20 @@
 package part21;
-
-class Box3<T>{
+class Box7<T> {
     private T ob;
-    public void set(T o){
-        ob = o;
-    }
-    public T get(){
+
+    public T get() {
         return ob;
     }
+
+    public void set(T ob) {
+        this.ob = ob;
+    }
 }
-
-
-public class PrimitivesAndGeneric {
+class PrimitivesAndGenric{
     public static void main(String[]args){
-        Box3<Integer> iBox = new Box3<Integer>();
-        iBox.set(125);
-        int num = iBox.get();
+        Box7<Integer> iBox = new Box7<>();
+        iBox.set(125); //오토 박싱
+        int num = iBox.get(); //오토 언박싱
         System.out.println(num);
     }
 }
