@@ -1,26 +1,26 @@
 package part22;
-
 class Box<T>{
     protected T ob;
-    public void set(T o){ ob = o;}
-    public T get(){ return ob;}
 
-    @Override
-    public String toString(){
-        return ob.toString();
+    public T get() {
+        return ob;
+    }
+
+    public void set(T ob) {
+        this.ob = ob;
     }
 }
 
-class StellBox<T> extends Box<T>{
-    public StellBox(T o){ //제네릭 클래스의 생성자
-        ob = o;
+class SteelBox<T> extends Box<T>{
+    public SteelBox(T o){ //제네릭 클래스의 생성자
+        this.ob =o;
     }
 }
 
-public class GenericInheritance {
+class GenricInheritance{
     public static void main(String[]args){
-        Box<Integer> iBox = new StellBox<>(7959);
-        Box<String> sBox = new StellBox<>("Simple");
+        Box<Integer> iBox = new SteelBox<>(7959);
+        Box<String> sBox = new SteelBox<>("Simple");
         System.out.println(iBox.get());
         System.out.println(sBox.get());
     }
