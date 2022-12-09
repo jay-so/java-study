@@ -1,15 +1,24 @@
 package part22;
-
-class EmptyBoxFactory{
-    public static<T> Box<T> makeBox(){ //제네릭 메소드
-        Box<T> box = new Box<>(); //상자 생성
-        return box; //생성한 상자 반환
+class Box2<T>{
+    private T ob;
+    public void set(T o){
+        ob = o;
+    }
+    public T get(){
+        return ob;
     }
 }
 
-public class TargetTypes {
+class EmptyBoxFactory{
+    public static <T> Box2<T> makeBox(){ //제네릭 메소드
+        Box2<T> box = new Box2<T>(); //상자 생성
+        return box;
+    }
+}
+
+class TargetTypes{
     public static void main(String[]args){
-        Box<Integer> iBox = EmptyBoxFactory.<Integer>makeBox();
+        Box2<Integer> iBox = EmptyBoxFactory.makeBox();
         iBox.set(25);
         System.out.println(iBox.get());
     }
