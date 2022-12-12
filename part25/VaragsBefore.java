@@ -1,11 +1,9 @@
 package part25;
-
-public class VaragsBefore {
-    public static void showAll(String[]vars){
-        System.out.println("LEN: " + vars.length);
-
-        for(String s:vars)
-            System.out.print(s + '\t');
+class VarargsBefor{
+    public static void showAll(String[]vargs){
+        System.out.println("LEN: " + vargs.length);
+        for(String s: vargs)
+            System.out.printf(s + '\t');
 
         System.out.println('\n');
     }

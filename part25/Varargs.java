@@ -1,11 +1,10 @@
 package part25;
-
-public class Varargs {
+class Varargs{
     public static void showAll(String...vargs){
-        System.out.println("LEN: " + vargs.length);
+        System.out.println("LEN: " +vargs.length);
 
         for(String s: vargs)
-            System.out.print(s + '\t');
+            System.out.printf(s + '\t');
         System.out.println();
     }
 
@@ -14,5 +13,4 @@ public class Varargs {
         showAll("Box","Toy");
         showAll("Box","Toy","Apple");
     }
-
 }

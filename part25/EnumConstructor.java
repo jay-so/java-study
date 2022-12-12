@@ -1,5 +1,4 @@
 package part25;
-
 enum Person5{
     MAN,WOMAN;
 
@@ -8,11 +7,11 @@ enum Person5{
     }
     @Override
     public String toString(){
-        return "I am a dog persion";
+        return "I am a dog person";
     }
 }
 
-public class EnumConstructor {
+class EnumConstructor{
     public static void main(String[]args){
         System.out.println(Person5.MAN);
         System.out.println(Person5.WOMAN);

@@ -1,33 +1,34 @@
 package part25;
-
 class Customer{
     enum Gender{ //클래스 내에 정의된 열거형 Gender
-        MALE,FEMALE
-    }
+        MALE,FEMALE;
 
-   private String name;
+        @Override
+        public String toString(){
+            return "I am a dog person";
+        }
+    }
+    private String name;
     private Gender gen;
 
     public Customer(String n, String g) {
-        name = n;
+        this.name = n;
 
         if(g.equals("man"))
             gen = Gender.MALE;
         else
             gen = Gender.FEMALE;
     }
-
     @Override
     public String toString(){
         if(gen == Gender.MALE)
-            return "Thank you, Mr" + name;
+            return "Thank you,Mr " + name;
         else
-            return "Thank you,Mrs" + name;
+            return "Thank you,Mrs " + name;
     }
 }
 
-
-public class InnerEnum {
+class InnerEnum{
     public static void main(String[]args){
         Customer cus1 = new Customer("Brown","man");
         Customer cus2 = new Customer("Susan Hill","woman");

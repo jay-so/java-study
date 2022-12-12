@@ -1,5 +1,4 @@
 package part25;
-
 interface Viewable{
     public void showIt(String str);
 }
@@ -11,7 +10,7 @@ class Viewer implements Viewable{
     }
 }
 
-public class AtOverride {
+class AtOverride{
     public static void main(String[]args){
         Viewable view = new Viewer();
         view.showIt("Hello Annotations");
