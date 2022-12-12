@@ -1,11 +1,11 @@
 package part26;
 
-interface Printable7{
+interface Printable8{
     void print(String s);
 }
 
 public class Lambda4 {
-    public static void ShowString(Printable6 p, String s){
+    public static void ShowString(Printable8 p, String s){
         p.print(s);
     }
 

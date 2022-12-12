@@ -1,6 +1,6 @@
 package part26;
 
-interface Printable5{
+interface Printable6{
     void print(String s);
 }
 public class Lambda2 {
