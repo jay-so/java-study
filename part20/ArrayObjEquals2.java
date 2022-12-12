@@ -10,17 +10,17 @@ class INum2{
     }
     @Override
     public boolean equals(Object obj){
-        if(this.num == ((INum2)obj).num) // 두인스턴스의 내용 비교
+        if(this.num ==((INum2)obj).num) //두 인스턴스의 내용 비교
             return true;
         else
             return false;
     }
 }
 
-public class ArrayObjEquals2 {
+class ArrayObjEquals2{
     public static void main(String[]args){
-        INum2 []ar1 = new INum2[3];
-        INum2 []ar2 = new INum2[3];
+        INum2[] ar1 = new INum2[3];
+        INum2[]ar2 = new INum2[3];
         ar1[0] = new INum2(1); ar2[0] = new INum2(1);
         ar1[1] = new INum2(2); ar2[1] = new INum2(2);
         ar1[2] = new INum2(3); ar2[2] = new INum2(3);
