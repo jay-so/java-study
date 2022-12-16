@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class SetCollectionFeature {
+class SetCollectionFeature{
     public static void main(String[]args){
         Set<String> set = new HashSet<>();
         set.add("Toy");
@@ -14,15 +14,13 @@ public class SetCollectionFeature {
         System.out.println("인스턴스 수: " + set.size());
 
         //반복자를 이용한 전체 출력
-        for(Iterator<String> itr = set.iterator(); itr.hasNext();){
+        for(Iterator<String> itr = set.iterator(); itr.hasNext();)
             System.out.print(itr.next() + '\t');
-        }
         System.out.println();
 
         //for-each문을 이용한 전체 출력
-        for(String s: set){
+        for(String s : set)
             System.out.print(s + '\t');
-        }
         System.out.println();
     }
 }

@@ -2,21 +2,20 @@ package part23;
 
 import java.util.HashSet;
 
-class  Num{
-    private  int num;
-    public Num(int n){
-        num = n;
+class Num{
+    private int num;
+
+    public Num(int num) {
+        this.num = num;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return String.valueOf(num);
     }
 }
 
-
-
-public class HashSetEqualityOne {
+class HashSetEqualityOne{
     public static void main(String[]args){
         HashSet<Num> set = new HashSet<>();
         set.add(new Num(7799));
@@ -24,9 +23,8 @@ public class HashSetEqualityOne {
         set.add(new Num(7799));
         System.out.println("인스턴스 수: " + set.size());
 
-        for(Num n: set){
+        for(Num n: set)
             System.out.print(n.toString() + '\t');
-        }
         System.out.println();
     }
 }
