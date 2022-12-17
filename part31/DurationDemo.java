@@ -1,2 +1,4 @@
-package part31;public class DurationDemo {
+package part31;
+
+public class DurationDemo {
 }
