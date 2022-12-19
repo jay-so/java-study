@@ -3,7 +3,7 @@ package part23;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListcollection {
+public class ArrayListCollection {
     public static void main(String[]args){
         List<String> list = new ArrayList<>(); //컬렉션 인스턴스 생성
 
@@ -22,7 +22,7 @@ public class ArrayListcollection {
 
         //첫 번째 인스턴스 삭제 후 나머지 인스턴스들을 참조
         for(int i = 0;i<list.size();i++){
-            System.out.print(list.get(i)+'\t');
+            System.out.print(list.get(i) + '\t');
         }
         System.out.println();
     }

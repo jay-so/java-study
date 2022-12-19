@@ -2,6 +2,7 @@ package part23;
 
 import java.util.HashSet;
 
+
 class Num2 {
     private int num;
     public Num2(int n) {
