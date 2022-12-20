@@ -1,27 +1,25 @@
 package part24;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 class Car implements Comparable<Car>{
-    private int disp; //  배기량
+    private int disp; //배기량
 
     public Car(int disp) {
         this.disp = disp;
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "cc: " + disp;
     }
     @Override
     public int compareTo(Car o){
-        return disp - o.disp;
+        return disp -o.disp;
     }
 }
 
-public class CarSortColletions {
+class CarSortCollectioons{
     public static void main(String[]args){
         List<Car> list = new ArrayList<>();
         list.add(new Car(1200));
@@ -29,7 +27,7 @@ public class CarSortColletions {
         list.add(new Car(1800));
         Collections.sort(list); //정렬
 
-        for(Iterator<Car>itr = list.iterator(); itr.hasNext();)//출력
-            System.out.println(itr.next().toString() + '\t');
+        for(Iterator<Car> itr = list.iterator(); itr.hasNext();) //출력
+            System.out.println(itr.next().toString()+'\t');
     }
 }

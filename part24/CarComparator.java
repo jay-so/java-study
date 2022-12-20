@@ -3,22 +3,22 @@ package part24;
 import java.util.*;
 
 class Car3{
-    protected  int disp;
+    protected int disp;
 
     public Car3(int disp) {
         this.disp = disp;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "cc: " + disp;
     }
 }
 
-//Car3의 정렬을 위한 클래스
- class CarComp implements Comparator<Car3> {
+//Car의 정렬을 위한 클래스
+class CarComp implements Comparator<Car3>{
     @Override
-    public int compare(Car3 o1, Car3 o2){
+    public int compare(Car3 o1, Car3 o2) {
         return o1.disp - o2.disp;
     }
 }
@@ -32,12 +32,12 @@ class ECar2 extends Car3{
     }
 
     @Override
-    public String toString(){
-        return "cc: " + disp + ", ba: " + battery;
+    public String toString() {
+        return "cc: " + disp +", ba: " + battery;
     }
 }
 
-public class CarComparator {
+class CarComparator{
     public static void main(String[]args){
         List<Car3> clist = new ArrayList<>();
         clist.add(new Car3(1800));
@@ -53,13 +53,13 @@ public class CarComparator {
 
         //각각 정렬
         Collections.sort(clist,comp);
-        Collections.sort(elist,comp); //이 문장이 이 예제의 핵심!
+        Collections.sort(elist,comp); //이 문장이 이 예제의 핵심
 
-        for(Iterator<Car3> itr = clist.iterator(); itr.hasNext();)
-            System.out.println(itr.next().toString() + '\t');
+        for(Iterator<Car3> itr = clist.iterator(); itr.hasNext(); )
+            System.out.println(itr.next().toString()+'\t');
         System.out.println();
 
         for(Iterator<ECar2> itr = elist.iterator(); itr.hasNext();)
-            System.out.println(itr.next().toString()+'\t');
+            System.out.println(itr.next().toString() + '\t');
     }
 }

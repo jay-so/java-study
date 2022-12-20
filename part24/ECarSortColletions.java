@@ -13,16 +13,18 @@ class Car2 implements Comparable<Car2>{
     }
 
     @Override
-    public String toString(){
-        return  "cc: " + disp;
+    public String toString() {
+        return "cc: " + disp;
     }
+
     @Override
-    public int compareTo(Car2 o){
+    public int compareTo(Car2 o) {
         return disp - o.disp;
     }
 }
+
 class ECar extends Car2{ //전기 자동차를 표현한 클래스
-    private int battery;
+    private int battery; //배터리
 
     public ECar(int disp, int battery) {
         super(disp);
@@ -30,12 +32,12 @@ class ECar extends Car2{ //전기 자동차를 표현한 클래스
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "cc: " + disp + ", ba: " + battery;
     }
 }
 
-public class ECarSortColletions {
+class ECarSortColletions{
     public static void main(String[]args){
         List<ECar> list = new ArrayList<>();
         list.add(new ECar(1200,99));
@@ -44,6 +46,6 @@ public class ECarSortColletions {
         Collections.sort(list); //정렬
 
         for(Iterator<ECar> itr = list.iterator(); itr.hasNext();) //출력
-            System.out.println(itr.next().toString()+ '\t');
+            System.out.println(itr.next().toString() + '\t');
     }
 }
