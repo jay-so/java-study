@@ -1,17 +1,23 @@
 package part31;
 
-import java.time.LocalDateTime;
+
+import java.time.Duration;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class ZonedDateTimeDemo1 {
     public static void main(String[]args){
-        //현재 날짜와 시각
-        LocalDateTime dt = LocalDateTime.now();
+        //이곳의 현재 날짜와 시각
+        ZonedDateTime here = ZonedDateTime.now();
+        System.out.println(here);
 
-        //영국 바이어와 22시간 35분 뒤 화상 미팅 예정
-        LocalDateTime mt = dt.plusHours(22);
-        mt = mt.plusMinutes(35);
+        //동일한 날짜와 시각의 파리
+        ZonedDateTime paris = ZonedDateTime.of(here.toLocalDateTime(), ZoneId.of("Europe/Paris"));
+        System.out.println(paris);
 
-        //영국 바이어와 화상 미팅 날짜와 시각
-        System.out.println(mt);
+        //이곳과 파리의 시차
+        Duration diff = Duration.between(here,paris);
+        System.out.println(diff);
+
     }
 }
