@@ -1,8 +1,7 @@
 package part34;
-
-public class MakeThreadDemo {
+class MakeThreadDemo{
     public static void main(String[]args){
-        Runnable task = () -> { //쓰레드가 실행하게 할 내용
+        Runnable task = () ->{ //쓰레드가 실행하게 할 내용
             int n1 = 10;
             int n2 = 20;
             String name = Thread.currentThread().getName();
