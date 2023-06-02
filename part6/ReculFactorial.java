@@ -1,8 +1,8 @@
 package part6;
 
 public class ReculFactorial {
-    public static void main(String[]args){
-        System.out.println("3 fatorial: " + factorial(3));
+    public static void main(String[] args) {
+        System.out.println("3 facotrial: " + factorial(3));
         System.out.println("12 factorial: " + factorial(12));
     }
 
@@ -10,6 +10,6 @@ public class ReculFactorial {
         if(n == 1)
             return 1;
         else
-            return n* factorial(n-1);
+            return n * factorial(n - 1);
     }
 }
