@@ -1,10 +1,9 @@
 package part2;
 
-public class Operation {
+public class OperationPromotion {
     public static void main(String[] args){
-
-        int num1 = 11;
-        int num2 = 22;
+        short num1 = 11;
+        short num2 = 22;
         int result = num1 + num2;
         System.out.println(result);
     }
