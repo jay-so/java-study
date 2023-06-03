@@ -1,11 +1,12 @@
 package part11;
 
 class SimpleBox{
-    private  int data;
+    private int data;
 
-    SimpleBox(int data){
+    public SimpleBox(int data) {
         this.data = data;
     }
+
     void setData(int data){
         this.data = data;
     }
@@ -15,7 +16,7 @@ class SimpleBox{
 }
 
 public class ThisInst {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         SimpleBox box = new SimpleBox(99);
         System.out.println(box.getData());
 

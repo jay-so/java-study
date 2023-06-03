@@ -1,9 +1,9 @@
 package part11;
 
 public class ImmutableString {
-    public static void main(String[]args){
-        String str1 = "Simple String";
-        String str2 = "Simple String";
+    public static void main(String[] args) {
+        String str1 = "simple String";
+        String str2 = "simple String";
 
         String str3 = new String("Simple String");
         String str4 = new String("Simple String");

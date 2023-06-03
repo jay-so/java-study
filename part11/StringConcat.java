@@ -1,7 +1,7 @@
 package part11;
 
 public class StringConcat {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         String st1 = "Coffee";
         String st2 = "Bread";
 
