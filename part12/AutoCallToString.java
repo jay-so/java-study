@@ -11,9 +11,8 @@ class Box{
         return conts;
     }
 }
-
 public class AutoCallToString {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         StringBuilder stb = new StringBuilder("12");
         stb.append(34);
         System.out.println(stb.toString());
