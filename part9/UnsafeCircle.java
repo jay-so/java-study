@@ -4,26 +4,26 @@ class Circle{
     double rad = 0; //원의 반지름
     final double PI = 3.14;
 
-    public Circle(double r) {
-        setRad(r); //아래에 정의된 setRad 메소드 호출을 통한 초기화
+    //생성자
+    public Circle(double rad) {
+        this.rad = rad; //아래에 정의된 setRad 메소드 호출을 통한 초기화
     }
 
-    public void setRad(double r){
-        if(r<0){ //반지름은 0보다 작을 수 없으므로
+    public void setRad(double rad){
+        if(rad < 0){ //반지름 0보다 작을 수 없으므로
             rad = 0;
-            return; //메소드를 빠져나감
+            return; //해당 위치에서 메소드가 빠져 나감
+        }else{
+            this.rad = rad;
         }
-        rad = r;
     }
-
     public double getArea(){
-        return (rad * rad) *PI; //원의 넓이를 반환함
+        return (rad * rad) *PI; //원의 넓이 반환
     }
 }
 
 public class UnsafeCircle {
-    public static void main(String[]args){
-      // 객체 생성
+    public static void main(String[] args) {
         Circle c = new Circle(1.5);
         System.out.println(c.getArea());
 
