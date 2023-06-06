@@ -1,25 +1,24 @@
 package part10;
 
-/*
-  클래스 메소드란?
-  - 객체 생성 이전에 호출이 가능하며 어떠한 객체에도 속하지 않는 메소드이다.
-
- */
 
 class NumberPrinter{
     private int myNum = 0;
-    static void showInt(int n){
+
+    static void showInt(int n){ //클래스 메소드(static 메소드)
         System.out.println(n);
-    } //클래스 메소드 (static 메소드)
-    static void showDouble(double n){
+    }
+
+    static void showDouble(double n){ //클래스 메소드(static 메소드)
         System.out.println(n);
-    } //클래스 메소드(static 메소드)
-    void setMyNumber(int n){
+    }
+
+    void setMyNumber(int n){ //인스턴스 메소드
         myNum = n;
-    } //인스턴스 메소드
-    void showMyNumber(){
+    }
+
+    void showMyNumber(){ //인스턴스 메소드
         showInt(myNum);
-    } //인스턴스 메소드
+    }
 }
 
 public class ClassMethod {

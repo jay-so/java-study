@@ -1,6 +1,6 @@
 package part10;
 
-class SimnpleCalculator{
+class SimpleCalculator{
     static final double PI = 3.1415;
 
     double add(double n1, double n2){
@@ -13,18 +13,16 @@ class SimnpleCalculator{
         return PI * r * r;
     }
     double calCirclePeri(double r){
-        return PI * (r*2);
+        return PI * (r * 2);
     }
 }
 
 public class UseCalculator {
-
-    public static void main(String []args){
-        SimnpleCalculator sc = new SimnpleCalculator();
-        System.out.println(" 3 + 4  = " + sc.add(3,4));
-        System.out.println("반지름 2.2, 원의 넓이: " + sc.calCircleArea(2.2)+ " \n");
-
+    public static void main(String[] args) {
+        SimpleCalculator sc = new SimpleCalculator();
+        System.out.println("3 + 4 = " + sc.add(3,4));
+        System.out.println("반지름 2.2, 원의 넓이: " + sc.calCircleArea(2.2) + "\n");
         System.out.println("15 - 7 = " + sc.min(15,7));
-        System.out.println("반지름 5,0, 원의 넓이: " + sc.calCirclePeri(5.0));
+        System.out.println("반지름 5.0, 원의 넓이: " + sc.calCirclePeri(5.0));
     }
 }
