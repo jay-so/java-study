@@ -1,7 +1,7 @@
 package part7;
 
 //은행 입출금 계좌를 나타내는 클래스
-class BankAccountPO{
+public class BankAccountPO{
     static int balance = 0;//예금 잔액
 
     //main메소드
@@ -11,16 +11,22 @@ class BankAccountPO{
         withdraw(3000); //출금 진행
         checkMyBalance(); //잔액 확인
     }
-    public static int deposit(int amount){ //입금을 담당하는 메소드
+
+    //입금을 담당하는 메소드
+    public static int deposit(int amount){
         balance += amount;
         return balance;
     }
-    public static int withdraw(int amount){ //출금을 담당하는 메소드
+
+    //출금을 담당하는 메소드
+    public static int withdraw(int amount){
         balance -= amount;
         return balance;
     }
-    public static int checkMyBalance(){ //예금 조회를 담당하는 메소드
-        System.out.println("잔액 : " + balance);
+
+    //잔액을 확인하는 메소드
+    public static int checkMyBalance(){
+        System.out.println("잔액 : "+ balance);
         return balance;
     }
 }
