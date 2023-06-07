@@ -1,12 +1,11 @@
 package part17;
 
-interface Printable2 {
+interface Printable2{
     static void printLine(String str){
         System.out.println(str);
     }
     default void print(String doc){
-        // 인터페이스의 static 메소드 호출
-        printLine(doc);
+        printLine(doc); //인터페이스의 static 메소드 호출
     }
 }
 
@@ -17,7 +16,7 @@ class Printer2 implements Printable2{}
 public class SimplePrinter {
     public static void main(String[]args){
         String myDoc = "This is a report about...";
-        Printable prn = new Printer();
+        Printable2 prn = new Printer2();
         prn.print(myDoc);
 
         // 인터페이스의 static 메소드 직접 호출

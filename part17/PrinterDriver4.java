@@ -1,9 +1,12 @@
 package part17;
 
-interface Printable4 {
+interface Printable4{
     void print(String doc);
+
+    //디폴트 메소드
     default void printCMYK(String doc){ };
 }
+
 // S사의 흑백 프린터 드라이버
 class Prn731Drv2 implements Printable4{
     @Override
@@ -28,9 +31,8 @@ class Prn99Drv2 implements Printable4{
     }
 }
 
-
 public class PrinterDriver4 {
-    public static void main(String[]args){
+    public static void main(String[] args) {
         String myDoc = "This is a report about ...";
         Printable4 prn1 = new Prn731Drv2();
         prn1.print(myDoc);
